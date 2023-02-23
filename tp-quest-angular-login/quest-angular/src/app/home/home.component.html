@@ -1,1 +1,27 @@
-<h1>Accueil</h1>
+
+<p>{{user.login}}  aaa ffdsfdsf  {{user.password}}</p>  
+<div id = bloc>
+    
+  
+    <!-- récuperer les imputs pour les envoyer dans l'authentification -->
+    <table>
+        <tr>
+            <td>login :</td>
+            <td><input type="text" id="login" name="login" [(ngModel)]="user.login"/></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>password :</td>
+            <td><input type="text" id="password" name="password" [(ngModel)]="user.password" /></td>
+        </tr>
+      
+    </table>
+    <div class="btn-group btn-group-lg float-right">
+        <a class="btn btn-success" (click)="authentification()"><i class="bi bi-check-square-fill"></i></a>
+        
+    </div>
+
+</div>

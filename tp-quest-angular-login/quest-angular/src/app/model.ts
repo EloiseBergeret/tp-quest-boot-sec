@@ -58,3 +58,38 @@ export class Ordinateur {
         this.ram = ram;
     }
 }
+
+export class User{
+    login:string;
+    password:string;
+
+    constructor(login?:string,password? : string){
+        this.login=login;
+        this.password = password;
+    }
+}
+
+export class Utilisateur{
+
+    id: number;
+    identifiant: string;
+    motDePasse: string;
+    nom: string;
+    prenom: string;
+    disabled: boolean;
+    roles: String;
+    personne: Personne;
+
+    constructor(id?: number, identifiant?: string, motDePasse?: string, nom?: string, prenom?: string, disabled?: boolean, roles?: String,
+        personne?: Personne){
+this.id=id;
+this.identifiant=identifiant;
+this.motDePasse=motDePasse;
+this.nom=nom;
+this.prenom=prenom;
+this.roles=roles;
+this.personne=personne;
+
+        }
+
+}
