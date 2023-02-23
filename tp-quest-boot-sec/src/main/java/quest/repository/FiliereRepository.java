@@ -59,4 +59,7 @@ public interface FiliereRepository extends JpaRepository<Filiere, Integer> {
 	@Query("update Filiere f set f.referent=null where f.referent=:referent")
 	void setReferentToNullByReferent(@Param("referent") Formateur referent);
 
+	
+	@Query("select f from Filiere f where f.referent.id=:id")
+	List<Filiere> findAllByReferentId(@Param("id") Integer id);
 }

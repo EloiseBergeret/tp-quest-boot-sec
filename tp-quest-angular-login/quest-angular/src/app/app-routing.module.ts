@@ -4,12 +4,14 @@ import { FiliereComponent } from './filiere/filiere.component';
 import { HomeComponent } from './home/home.component';
 import { OrdinateurComponent } from './ordinateur/ordinateur.component';
 import { StagiaireComponent } from './stagiaire/stagiaire.component';
+import { AccueilformateurComponent } from './accueilformateur/accueilformateur.component';
 
 const routes: Routes = [
   {path: "", component: HomeComponent, pathMatch: 'full'},
   {path: "stagiaire", component: StagiaireComponent},
   {path: "filiere", component: FiliereComponent},
-  {path: "ordinateur", component: OrdinateurComponent}
+  {path: "ordinateur", component: OrdinateurComponent},
+  {path: "accueilFormateur", component: AccueilformateurComponent}
 ];
 
 @NgModule({

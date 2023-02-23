@@ -28,6 +28,8 @@ import quest.repository.FormateurRepository;
 public class FormateurRestController {
 	@Autowired
 	private FormateurRepository formateurRepository;
+	
+	
 
 	@GetMapping("")
 	@JsonView(Views.ViewFormateur.class)
